@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html ng-app="codefinder">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title></title>
+    @Styles.Render("~/Content/css")
+
+</head>
+<body>
+    <div id="mainwraper">
+        <div id="mainModule">
+
+            <header class="header">
+                <!-- Static navbar -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="pull-left logo">
+                                <a ng-href="/">
+                                    <img class="pull-left" src="~/Content/images/logo.png" />
+                                    <label class="">CareDeveloper</label>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav"></ul>
+
+                            <div class="navbar-nav navbar-right ">
+                                <ul class="nav navbar-nav list-unstyled list-inline">
+                                    <li><a ng-href="signup"><span class="">Signup</span></a></li>
+                                    <li><a ng-href="/signin"><span class="">Signin</span></a></li>
+                                    <li><a ng-href="/help"><span class="">Help</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                    <!--/.container-fluid -->
+                </div>
+            </header>
+
+            @RenderBody()
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container footer-content">
+            <ul class="list-unstyled list-inline">
+                <li><a ng-href="#">tour</a></li>
+                <li><a ng-href="#">help</a></li>
+                <li><a ng-href="#">blog</a></li>
+                <li><a ng-href="#">chat</a></li>
+                <li><a ng-href="#">legal</a></li>
+                <li><a ng-href="#">privacy</a></li>
+                <li><a ng-href="#">contact</a></li>
+                <li><a ng-href="#">about us</a></li>
+                <li><a ng-href="#">feedback</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div id="fb-root"></div>
+
+    @* facebook *@
+    <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: '1439849022953181',
+                    xfbml: true,
+                    version: 'v2.0'
+                });
+
+                fbApiInit = true; //init flag
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) { return; }
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+            function fbEnsureInit(callback) {
+                if (!window.fbApiInit) {
+                    setTimeout(function () { fbEnsureInit(callback); }, 50);
+                } else {
+                    if (callback) {
+                        callback();
+                    }
+                }
+            }
+    </script>
+
+</body>
+</html>
