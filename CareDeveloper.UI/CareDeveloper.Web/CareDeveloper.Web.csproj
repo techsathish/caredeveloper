@@ -126,6 +126,7 @@
     <Folder Include="App\!d\controller\" />
     <Folder Include="App\!d\service\" />
     <Folder Include="App\!d\view\" />
+    <Folder Include="App\home\service\" />
     <Folder Include="App\sigin\service\" />
     <Folder Include="App\sigin\view\" />
     <Folder Include="App_Data\" />
@@ -163,7 +164,10 @@
   <ItemGroup>
     <Content Include="App\boot\app.js" />
     <Content Include="App\boot\main.js" />
+    <Content Include="App\home\controller\home.js" />
+    <Content Include="App\home\view\home.html" />
     <Content Include="App\sigin\controller\siginController.js" />
+    <Content Include="App\_Common\directives\googleSignup.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -202,7 +206,10 @@
     <Content Include="Scripts\angular-touch.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\angularAMD\angularAMD.js" />
     <Content Include="Scripts\angularAMD\angularAMD.min.js" />
+    <Content Include="Scripts\angularAMD\ngload.js" />
+    <Content Include="Scripts\angularAMD\ngload.min.js" />
     <Content Include="Scripts\AngularUI\ui-router.js" />
     <Content Include="Scripts\AngularUI\ui-router.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -235,6 +242,8 @@
     <Content Include="Scripts\angular-aria.min.js.map" />
     <Content Include="Scripts\angular-animate.min.js.map" />
     <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Scripts\angularAMD\ngload.min.map" />
+    <Content Include="Scripts\angularAMD\angularAMD.min.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />
