@@ -77,19 +77,16 @@ namespace CareDeveloper.Web.Controllers
                 {
                     dynamic profile = ProfileBase.Create(userSignUpForm.EmailId);
                     profile.FullName = userSignUpForm.FullName;
+                    profile.Gender = userSignUpForm.Gender;
+                    profile.Email = userSignUpForm.EmailId;
                     profile.SignUpFrom = userSignUpForm.SignUpFrom;
                     profile.Save();
                     result.Status = Model.Status.Success;
-
                 }
                 else
                 {
                     result.Status = Model.Status.Failure;
                 }
-
-                //result.Result = new { 
-                    
-                //};
 
                 result.Message = membershipCreateStatus.ToString();
 
