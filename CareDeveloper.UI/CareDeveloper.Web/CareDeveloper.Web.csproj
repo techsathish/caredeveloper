@@ -207,6 +207,7 @@
     <Content Include="Scripts\angularAMD\angularAMD.min.js" />
     <Content Include="Scripts\angularAMD\ngload.js" />
     <Content Include="Scripts\angularAMD\ngload.min.js" />
+    <Content Include="Scripts\AngularBootstrap\ui-bootstrap.min.js" />
     <Content Include="Scripts\AngularUI\ui-router.js" />
     <Content Include="Scripts\AngularUI\ui-router.min.js" />
     <Content Include="Scripts\bootstrap.js" />
