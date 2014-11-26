@@ -15,6 +15,7 @@ namespace CareDeveloper.Model
         public string Password { get; set; }
         public string RetypePassword { get; set; }
         public string SignUpFrom { get; set; }
+        public string Gender { get; set; }
     }
 
     public enum LoginType

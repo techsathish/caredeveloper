@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>AngularJS-Toaster</id>
+    <version>0.4.7</version>
+    <title>AngularJS-Toaster</title>
+    <authors>Jiří Kavulák</authors>
+    <owners>Jiří Kavulák</owners>
+    <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
+    <projectUrl>https://github.com/jirikavi/AngularJS-Toaster</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>AngularJS Toaster is a customized version of "toastr" non-blocking notification javascript library.</description>
+    <summary>AngularJS Toaster is a AngularJS port of the toastr non-blocking notification jQuery library. It requires AngularJS v1.2.6 or higher and angular-animate for the CSS3 transformations. (I would suggest</summary>
+    <tags>angularjs toastr angularJs-Toaster</tags>
+  </metadata>
+</package>
