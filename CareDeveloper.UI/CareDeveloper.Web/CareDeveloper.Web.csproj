@@ -126,8 +126,6 @@
     <Folder Include="App\!d\controller\" />
     <Folder Include="App\!d\service\" />
     <Folder Include="App\!d\view\" />
-    <Folder Include="App\sigin\service\" />
-    <Folder Include="App\sigin\view\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
@@ -164,7 +162,15 @@
     <Content Include="App\boot\app.js" />
     <Content Include="App\boot\filters.js" />
     <Content Include="App\boot\main.js" />
-    <Content Include="App\sigin\controller\siginController.js" />
+    <Content Include="App\home\controller\home.js" />
+    <Content Include="App\home\view\home.html" />
+    <Content Include="App\signin\controller\sigin.js" />
+    <Content Include="App\signin\service\signin.js" />
+    <Content Include="App\signin\view\signin.html" />
+    <Content Include="App\signup\controller\signup.js" />
+    <Content Include="App\signup\service\createUser.js" />
+    <Content Include="App\signup\view\signup.html" />
+    <Content Include="App\_Common\directives\googleSignup.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
