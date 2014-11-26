@@ -9,6 +9,7 @@
         $scope.retypePassword = 'photon@123';
 
         $scope.btnSignupClick = function () {
+            debugger;
             signupService.createUser({
                 FullName: $scope.fullName,
                 EmailId: $scope.email,

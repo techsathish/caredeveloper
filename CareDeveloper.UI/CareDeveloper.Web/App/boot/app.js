@@ -26,5 +26,13 @@
                 }));
             }]);
 
+
+    //configure restangular starts
+    app.config(['RestangularProvider', function (RestangularProvider) {
+        RestangularProvider.setBaseUrl('http://localhost:3000/api');
+    }]);
+
+
+    //configure restangular ends
     return angularAMD.bootstrap(app);
 });
