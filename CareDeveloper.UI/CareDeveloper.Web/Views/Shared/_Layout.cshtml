@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html ng-app="caredeveloper">
+<html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -24,7 +24,7 @@
                                 <span class="icon-bar"></span>
                             </button>
                             <div class="pull-left logo">
-                                <a ng-href="/">
+                                <a ui-sref="/">
                                     <img class="pull-left" src="~/Content/images/logo.png" />
                                     <label class="">CareDeveloper</label>
                                 </a>
@@ -35,9 +35,9 @@
 
                             <div class="navbar-nav navbar-right ">
                                 <ul class="nav navbar-nav list-unstyled list-inline">
-                                    <li><a ng-href="signup"><span class="">Signup</span></a></li>
-                                    <li><a ng-href="/signin"><span class="">Signin</span></a></li>
-                                    <li><a ng-href="/help"><span class="">Help</span></a></li>
+                                    <li><a ui-sref="signup"><span class="">Signup</span></a></li>
+                                    <li><a ui-sref="/signin"><span class="">Signin</span></a></li>
+                                    <li><a ui-sref="/help"><span class="">Help</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -53,15 +53,15 @@
     <footer id="footer">
         <div class="container footer-content">
             <ul class="list-unstyled list-inline">
-                <li><a ng-href="#">tour</a></li>
-                <li><a ng-href="#">help</a></li>
-                <li><a ng-href="#">blog</a></li>
-                <li><a ng-href="#">chat</a></li>
-                <li><a ng-href="#">legal</a></li>
-                <li><a ng-href="#">privacy</a></li>
-                <li><a ng-href="#">contact</a></li>
-                <li><a ng-href="#">about us</a></li>
-                <li><a ng-href="#">feedback</a></li>
+                <li><a ui-sref="#">tour</a></li>
+                <li><a ui-sref="#">help</a></li>
+                <li><a ui-sref="#">blog</a></li>
+                <li><a ui-sref="#">chat</a></li>
+                <li><a ui-sref="#">legal</a></li>
+                <li><a ui-sref="#">privacy</a></li>
+                <li><a ui-sref="#">contact</a></li>
+                <li><a ui-sref="#">about us</a></li>
+                <li><a ui-sref="#">feedback</a></li>
             </ul>
         </div>
     </footer>
