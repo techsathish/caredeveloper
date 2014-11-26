@@ -1,5 +1,5 @@
 ﻿define(['app', 'singupCreateUserService'], function (app) {
-    app.controller('signup', ['$scope', 'signupService', '$filter', function ($scope, signupService, $filter) {
+    app.controller('caredeveloper.signup', ['$scope', 'signupService', '$filter', function ($scope, signupService, $filter) {
 
         $scope.gender = "male";
         $scope.formSubmitted = false;
@@ -18,8 +18,7 @@
                 SignUpFrom: 'careDeveloper'
             }).then(function (response) {
                 $scope.formSubmitted = true;
-                debugger;
-
+                
                 //success
                 if ($filter('ajaxResponseStatus')(response.Status)) {
                     $scope.isRegistrationSuccess = true;
