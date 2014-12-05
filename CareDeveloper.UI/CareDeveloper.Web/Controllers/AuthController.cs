@@ -23,7 +23,7 @@ namespace CareDeveloper.Web.Controllers
             try
             {
                 //first name valiadtion
-                if (userSignUpForm.FullName == "")
+                if (String.IsNullOrEmpty(userSignUpForm.FullName) || String.IsNullOrWhiteSpace(userSignUpForm.FullName))
                 {
                     result.Message = "name empty";
                     result.Status = Model.Status.Failure;
@@ -33,7 +33,7 @@ namespace CareDeveloper.Web.Controllers
                 //email valitation
 
                 //empty valdiation
-                if (userSignUpForm.EmailId == "")
+                if (String.IsNullOrEmpty(userSignUpForm.EmailId) || String.IsNullOrWhiteSpace(userSignUpForm.EmailId))
                 {
                     result.Message = "emailid empty";
                     result.Status = Model.Status.Failure;

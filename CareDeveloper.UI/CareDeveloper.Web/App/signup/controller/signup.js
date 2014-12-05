@@ -3,34 +3,43 @@
 
         $scope.gender = "male";
         $scope.formSubmitted = false;
+        $scope.formSubmittedToServer = false;
 
         //temp 
-        $scope.password = 'photon@123';
-        $scope.retypePassword = 'photon@123';
+        //$scope.password = 'photon@123';
+        //$scope.retypePassword = 'photon@123';
+        //temp ends
 
         $scope.btnSignupClick = function () {
-            debugger;
-            signupService.createUser({
-                FullName: $scope.fullName,
-                EmailId: $scope.email,
-                Password: $scope.password,
-                RetypePassword: $scope.retypePassword,
-                gender: $scope.gender,
-                SignUpFrom: 'careDeveloper'
-            }).then(function (response) {
-                $scope.formSubmitted = true;
-                
-                //success
-                if ($filter('ajaxResponseStatus')(response.Status)) {
-                    $scope.isRegistrationSuccess = true;
-                    $scope.message = "Successfully registered. please click here to <a ui-sref='signin'>sign in</a>";
-                }
-                //failure
-                else {
-                    $scope.isRegistrationSuccess = false;
-                    $scope.message = "Registration failed. " + response.Message;
-                }
-            });
+            $scope.formSubmitted = true;
+            if ($scope.userRegistration.$valid) {
+                debugger
+                //call the service to create a user
+                signupService.createUser({
+                    FullName: $scope.fullName,
+                    EmailId: $scope.email,
+                    Password: $scope.password,
+                    RetypePassword: $scope.retypePassword,
+                    gender: $scope.gender,
+                    SignUpFrom: 'careDeveloper'
+                }).then(function (response) {
+                    $scope.formSubmittedToServer = true;
+
+                    //success
+                    if ($filter('ajaxResponseStatus')(response.Status)) {
+                        $scope.isRegistrationSuccess = true;
+                    }
+                    //failure
+                    else {
+                        $scope.isRegistrationSuccess = false;
+                        $scope.message = "Registration failed. " + response.Message;
+                    }
+                });
+            }
         };
+
+        //end of the controller function
     }]);
+
+    //end of define function
 });

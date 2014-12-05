@@ -1,4 +1,4 @@
-﻿define(['angularAMD', 'angularRoute', 'restangularjs', 'toaster', 'angularSanitize', 'angularBootstrap', 'angularAnimate', 'appFilter'], function (angularAMD) {
+﻿define(['angularAMD', 'angularRoute', 'restangularjs', 'toaster', 'angularSanitize', 'angularBootstrap', 'angularAnimate', 'appFilter', 'fieldEqualsDirective'], function (angularAMD) {
     var app = angular.module("caredeveloper", ['ui.router', 'ngAnimate', 'ngSanitize', 'ui.bootstrap', 'toaster', 'restangular', 'appFilters']);
 
     //configure url structure
@@ -23,6 +23,12 @@
                     controller: 'caredeveloper.signup',
                     controllerUrl: '/App/signup/controller/signup.js',
                     templateUrl: '/App/signup/view/signup.html'
+                }))
+                .state('signin', angularAMD.route({
+                    url: '/signin',
+                    controller: 'caredeveloper.signin',
+                    controllerUrl: '/App/signin/controller/singinLanding.js',
+                    templateUrl: '/App/signin/view/singinLanding.html'
                 }));
             }]);
 

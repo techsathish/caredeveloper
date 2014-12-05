@@ -164,12 +164,13 @@
     <Content Include="App\boot\main.js" />
     <Content Include="App\home\controller\home.js" />
     <Content Include="App\home\view\home.html" />
-    <Content Include="App\signin\controller\sigin.js" />
+    <Content Include="App\signin\controller\singinLanding.js" />
     <Content Include="App\signin\service\signin.js" />
-    <Content Include="App\signin\view\signin.html" />
+    <Content Include="App\signin\view\singinLanding.html" />
     <Content Include="App\signup\controller\signup.js" />
     <Content Include="App\signup\service\createUser.js" />
     <Content Include="App\signup\view\signup.html" />
+    <Content Include="App\_Common\directives\fieldEquals.js" />
     <Content Include="App\_Common\directives\googleSignup.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap-theme.css" />
